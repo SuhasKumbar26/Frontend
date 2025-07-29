@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .back_learn{
+            background-color: lightskyblue;
+            color: rgb(255, 0, 0, 0.8);            
+        }
+        .box {
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+        }
+
+        #box1 {
+            background-color: lightcoral;
+        }
+        /* visiblity */
+        #Vbox1 {
+            visibility: hidden;
+            background-color: lightcoral;
+        }
+        
+        #box2, #Vbox2 {
+            background-color: lightgreen;
+        }
+
+        #box3 {
+            background-color: lightblue;
+        }
+        .logo{
+            height: 120px;
+            width: 120px;
+            background-image: url(https://thumbs.dreamstime.com/b/creative-simple-dragons-silhouettes-logo-stylized-vector-illustrations-simple-dragons-silhouettes-logo-130475058.jpg);
+            background-size: contain;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="back_learn">background color</div>
+    <hr>
+    <div id="box1" class="box">box1</div>
+    <div id="box2" class="box">box2</div>
+    <div id="box3" class="box">box3</div>
+    <hr>
+
+    <div class="logo"></div>
+    <hr>
+    
+    <!-- visiblity -->
+     <div class="box" id="Vbox1">box1</div>
+     <div class="box" id="Vbox2">box2</div>
+</body>
+</html>

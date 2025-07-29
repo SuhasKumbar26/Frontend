@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #93c5f8;
+    height: 30px;
+    width: 100%; /* FIXED */
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    width: 100%; /* FIXED */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#imgContainer img {
+    border: 2px solid rgb(31, 31, 31);
+    border-radius: 10px;
+    height: 200px;
+}
+
+#imgContainer {
+    margin-top: 2px ;
+    border: 2px solid black;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    margin-top: 2px;
+    height: 150px;
+    width: 100%; /* FIXED */
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    background-color: #93f8cc;
+    border: 2px solid black;
+    margin: 5px;
+    text-align: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+
+#box2 {
+    background-color: #f8c593;
+    flex-grow: 3;
+    flex-shrink: 9;
+    /* align-self: center; */
+}
+
+.Dubba {
+    background-color: rgb(253, 175, 175);
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin-top: 2px;
+}
+
+@media screen and ( min-width: 500px) {
+    .Dubba{
+        background-color: chartreuse;
+        width: 100%;
+    }
+}

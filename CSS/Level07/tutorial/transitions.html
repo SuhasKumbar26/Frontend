@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transistions</title>
+    <style>
+      button {
+        border: none;
+        border-radius: 5px;
+        color: white;
+        padding: 10px 20px;
+        background-color: #4caf50;
+
+        /* transition-property: all;
+        transition-duration: 3s;
+        transition-timing-function: steps(3);
+        transition-delay: 1s; */
+
+        position: relative;
+        top: 50px;
+        left: 50px;
+
+        /* transition: all 0.3s ease-in-out 0.1s; */
+        transform: rotateX(10deg);
+      }
+      button:hover {
+        background-color: #fb4622;
+        scale: 1.1;
+        /* transform: rotate(180deg); */
+        /* transform: translateY(50px) rotate(10deg); */
+        transform: skewY(10deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button type="submit">click me</button>
+    </div>
+  </body>
+</html>

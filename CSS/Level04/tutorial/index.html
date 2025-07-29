@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box model</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        height: 75px;
+        width: 75px;
+        padding: 5px 10px;
+      }
+
+      #first {
+        background-color: lightcoral;
+        /* Padding
+        padding: 10px 20px 30px 80px; */
+        /* margin */
+        margin: 10px 10px 10px 10px;
+      }
+      #second {
+        background-color: rgb(128, 240, 178);
+        /* Padding */
+        /* padding: 10px 20px 30px 80px; */
+
+        /* margin */
+        margin: 50px 10px 10px 10px; /* gap b/w in two components*/
+
+        /* border */
+        border: 2px solid rgb(2, 101, 45);
+        border-radius: 0px 0px 50px 50px;
+
+        /* boxsizing */
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first" class="box">First</div>
+    <div id="second" class="box">Second</div>
+  </body>
+</html>

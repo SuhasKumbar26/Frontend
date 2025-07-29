@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+
+        /* animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+        animation-play-state: running;
+        animation-timing-function: ease-in-out; */
+
+        animation: example 3s ease-in-out 1s infinite alternate-reverse;
+      }
+
+      @keyframes example {
+        0% {
+          background-color: lightcoral;
+          transform: translateX(0);
+        }
+        50% {
+          background-color: lightgreen;
+          /* transform: translateY(100px); */
+          transform: translateX(100px);
+        }
+        100% {
+          background-color: lightblue;
+          transform: translateX(200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box">animation</div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: palegreen;
+    height: 40px;
+}
+header nav {
+    padding: 10px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    margin-left: 55px;
+    padding: 5px;
+    &:hover {
+        color: rgb(88, 189, 243);
+    }
+}
+
+#divBar{
+    background-color: lightblue;
+    height: 90vh;
+    width: 100%;
+    top: 40px;
+}
+
+.container {
+    border: 2px solid black;
+    width: 100%;
+}
+
+.box {
+    background-color: lightyellow;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+#box4 {
+    background-color: rgb(62, 164, 110);
+    width: 80px;
+    height: 40px;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100vw;
+    background-color: lightcoral;
+}

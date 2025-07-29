@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress bar</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 20px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif, sans-serif;
+        color: #333;
+        font-size: 24px;
+        font-style: italic;
+        text-decoration: underline;
+      }
+      #Progress_outer {
+        width: 90%;
+        height: 25px;
+        border: 2px solid #000;
+        border-radius: 10px;
+        position: relative;
+        top: 25px;
+        left: 5%;
+      }
+      #Progress_inner {
+        width: 35%;
+        height: 100%;
+        background-color: #4caf50;
+        border-radius: 8px;
+        animation: loading 2s ease-in 1s 1 forwards;
+      }
+
+      @keyframes loading {
+        0% {
+          width: 0%;
+        }
+        90% {
+          width: 90%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Progress Bar Example</h1>
+    <div id="Progress_outer">
+      <div id="Progress_inner"></div>
+    </div>
+  </body>
+</html>
