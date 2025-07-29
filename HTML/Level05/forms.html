@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form>
+        <label for="username"> Name: </label>
+        <input type="text" name="username" value="suhas" placeholder="Enter your name" required>
+        <br><br>
+        <label for="email"> Email: </label>
+        <input type="email" name="email" value=""`` placeholder="Enter your email" required>
+        <br><br>
+
+        <label for="date"> Date: </label>
+        <input type="date" value="2023-10-01" name="date" required="true">
+        <br><br>
+
+        <label for="file"> Upload </label>
+        <input type="file" name="file" id="file" accept=".jpg, .png, .pdf" required>
+        <br><br>
+
+        <label for="color"> background-color</label>
+        <input type="color" name="color" value="#ff0000">
+        <br><br>
+
+        <label for="number"> Number: </label>
+        <input type="number" name="number" value="10" min="23" max="100" step="5">
+        <br><br>
+
+        <label for="button"> button </label>
+        <input type="button" value="Click Me" onclick="alert('Button Clicked!')">
+        <br><br>
+
+        <label for="submit"> Submit </label>
+        <input type="submit" value="Submit Form">  
+        <br><br>
+
+        <form action="">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <br>
+            <label for="female">female</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <br>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" value="other" id="other">
+            <br><br>
+        </form>
+        
+        <form action="">
+            <label for="c"> C </label>
+            <input type="checkbox" name="language" value="C" id="c">
+            <br>
+            <label for="cpp"> C++ </label>
+            <input type="checkbox" name="language" value="C++" id="cpp">
+            <br>   
+            <label for="java"> Java </label>
+            <input type="checkbox" name="language" value="Java" id="java">  
+            <br>
+            <label for="python"> Python </label>    
+            <input type="checkbox" name="language" value="Python" id="python">
+            <br><br>
+        </form>
+
+        <form action="">
+            <label for="com">Company</label>
+            <select name="Company" id="com">
+                <option value="Google"> google</option>
+                <option value="X">X</option>
+                <option value="Automation"> Automation</option>
+            </select>
+        </form>
+
+        <label for="textarea">story</label>
+        <textarea name="story" id="" cols="30" rows="10" placeholder="please write story"> write story...</textarea>
+    </form>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rklidcZ-aLU?si=rrOjRWMiFHljydNf&amp;start=12905" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
