@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <title>Background</title>
+  </head>
+  <body>
+    <!-- <div
+      class="bg-purple-200 h-96"
+      style="
+        background-image: url(https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Game_of_Thrones_title_card.jpg/250px-Game_of_Thrones_title_card.jpg);
+      "
+    >
+      hello world
+    </div> -->
+
+    <!-- <div
+      class="bg-purple-200 bg-[url(https://upload.wikimedia.org/wikipedia/en/thumb/d/d8/Game_of_Thrones_title_card.jpg/250px-Game_of_Thrones_title_card.jpg)] bg-no-repeat bg-contain h-96 bg-center"
+    >
+      hello world
+    </div> -->
+
+    <div class="container border-2 [&>*]:m-[5px] w-full m-auto">
+      <div
+        class="bg-gradient-to-t to-red-400 from-lime-300 h-10 w-96% border-2"
+      ></div>
+
+      <div
+        class="bg-gradient-to-b to-blue-300 from-pink-300 h-20 w-96% border-2"
+      ></div>
+
+      <div
+        class="bg-gradient-to-br to-yellow-300 from-sky-300 h-30 w-96% border-2"
+      ></div>
+
+      <div
+        class="bg-gradient-to-tr to-yellow-300 from-red-300 h-40 w-96% border-2"
+      ></div>
+
+      <h4 class="text-center">Shadow</h4>
+      <div class="shadow-black shadow-2xl h-40 w-96% border-2"></div>
+      <div>hello</div>
+      <div class="shadow-inner shadow-red-600 h-40 w-96% border-2"></div>
+    </div>
+  </body>
+</html>

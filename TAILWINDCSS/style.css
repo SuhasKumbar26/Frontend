@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
+
+@import "tailwindcss";
+
+/* @tailwind base; */
+/* @tailwind components; */
+@tailwind utilities;
+
+/* @layer components{
+  /* .btn-primary {
+    @apply bg-green-400 rounded p-2 text-white hover:bg-green-800;
+  } */
+
+  /* Add this custom hover variant */
+  /* .hover\:btn-background-blue:hover {
+    @apply bg-red-700 text-white p-2 rounded;
+  } */
+/* } */
+
+  /* .btn-background-blue {
+    @apply bg-blue-500 text-white p-2 rounded hover:bg-blue-700;
+  } */
+
+/* @layer components{
+  .btn {
+    @apply border border-slate-400 rounded px-2 py-1 m-2;
+  }
+
+  .btn-primary {
+    @apply bg-blue-500 border border-blue-300 rounded px-2 py-1 m-2 hover:bg-blue-600 text-white ;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-500 border border-slate-300 rounded px-2 py-1 m-2 hover:bg-slate-600 text-white ;
+  }
+
+  .btn-success{
+    @apply bg-green-500 border border-green-300 rounded px-2 py-1 m-2 hover:bg-green-600 text-white ;
+  }
+
+  .btn-danger{
+    @apply bg-red-500 border border-red-300 rounded px-2 py-1 m-2 hover:bg-red-600 text-white ;
+  }
+
+  .btn-warning{
+    @apply bg-yellow-500 border border-yellow-300 rounded px-2 py-1 m-2 hover:bg-yellow-600 text-white ;
+  }
+
+  .btn-info{
+    @apply bg-teal-500 border border-teal-300 rounded px-2 py-1 m-2 hover:bg-teal-600 text-white ;
+  }
+
+  .btn-basic{
+    @apply bg-white border border-gray-300 rounded px-2 py-1 m-2  text-black ;
+  }
+
+  .btn-dark{
+    @apply bg-gray-800 border border-green-300 rounded px-2 py-1 m-2 hover:bg-gray-900 text-white ;
+  }
+
+
+} */
+
+@layer components{
+  .photoGallery{
+    @apply w-60 hover:scale-110 transition duration-200 hover:brightness-110 border-2 border-gray-500 rounded hover:border-blue-400 hover:shadow-lg hover:shadow-gray-500;
+  }
+}
+
+@theme{
+  --font-AuQLD: "Playwrite AU QLD", "cursive";
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" id="root" class="">
+  <head>
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="/src/output.css" />
+
+    <script>
+      function changeMode() {
+        const root = document.getElementById("root");
+
+        if (root.className === "dark") {
+          document.getElementById("root").className = "light";
+        } else {
+          document.getElementById("root").className = "dark";
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-amber-300 dark:bg-slate-700">
+    <!-- <div class="dark:bg-pink-400">
+      <h4>dark mode test</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+        quaerat.
+      </p>
+    </div>
+
+    <div class="flex m-10 border-slate-900 border">
+      <div class="bg-blue-200 size-32 m-1"></div>
+      <p class="p-10">Box with dark mode</p>
+    </div> -->
+
+    <div class="flex flex-col items-center">
+      <div class="bg-slate-700 w-full h-10 dark:bg-yellow-300">
+        <h4 class="font-semibold text-center p-1 italic">tailwind css</h4>
+      </div>
+      <div>
+        <button
+          class="bg-blue-200 rounded border-2 border-black mt-5 p-1"
+          onclick="changeMode()"
+        >
+          click here
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
